@@ -15,11 +15,6 @@ const osu = require('node-os-utils');
 //  Get env variables
 require('dotenv').config();
 
-//  Middleware
-app.use(express.json());
-
-//  Connect to DB
-// app.use( cors() );
 app.use(
     cors({
       origin: 
@@ -28,6 +23,13 @@ app.use(
       "Access-Control-Allow-Credentials": true,
     })
   );
+
+//  Middleware
+app.use(express.json());
+
+//  Connect to DB
+// app.use( cors() );
+
 
 const con = mysql.createConnection({
     host        : process.env.DB_HOSTNAME,
