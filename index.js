@@ -23,7 +23,7 @@ app.use(express.json());
 app.use(
     cors({
       origin: 
-        "https://track01.vercel.app",
+        "https://tractail005.vercel.app",
       "Access-Control-Allow-Origin": "*",
       "Access-Control-Allow-Credentials": true,
     })
